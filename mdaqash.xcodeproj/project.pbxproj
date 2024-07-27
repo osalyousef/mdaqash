@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6161E332C4CEAA600048DF2 /* play.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6161E322C4CEAA600048DF2 /* play.swift */; };
 		D659BFDC2C4A2545009D586D /* mdaqashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D659BFDB2C4A2545009D586D /* mdaqashApp.swift */; };
 		D659BFDE2C4A2545009D586D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D659BFDD2C4A2545009D586D /* ContentView.swift */; };
 		D659BFE02C4A2547009D586D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D659BFDF2C4A2547009D586D /* Assets.xcassets */; };
 		D659BFE32C4A2547009D586D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D659BFE22C4A2547009D586D /* Preview Assets.xcassets */; };
+		D6FD290F2C4F0E30009EC78A /* TextFieldStepper in Frameworks */ = {isa = PBXBuildFile; productRef = D6FD290E2C4F0E30009EC78A /* TextFieldStepper */; };
+		D6FD29122C50BC7E009EC78A /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = D6FD29112C50BC7E009EC78A /* ButtonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6161E322C4CEAA600048DF2 /* play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = play.swift; sourceTree = "<group>"; };
 		D659BFD82C4A2545009D586D /* mdaqash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdaqash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D659BFDB2C4A2545009D586D /* mdaqashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdaqashApp.swift; sourceTree = "<group>"; };
 		D659BFDD2C4A2545009D586D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FD290F2C4F0E30009EC78A /* TextFieldStepper in Frameworks */,
+				D6FD29122C50BC7E009EC78A /* ButtonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,7 @@
 			children = (
 				D659BFDB2C4A2545009D586D /* mdaqashApp.swift */,
 				D659BFDD2C4A2545009D586D /* ContentView.swift */,
+				D6161E322C4CEAA600048DF2 /* play.swift */,
 				D659BFDF2C4A2547009D586D /* Assets.xcassets */,
 				D659BFE12C4A2547009D586D /* Preview Content */,
 			);
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = mdaqash;
+			packageProductDependencies = (
+				D6FD290E2C4F0E30009EC78A /* TextFieldStepper */,
+				D6FD29112C50BC7E009EC78A /* ButtonKit */,
+			);
 			productName = mdaqash;
 			productReference = D659BFD82C4A2545009D586D /* mdaqash.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = D659BFCF2C4A2545009D586D;
+			packageReferences = (
+				D6FD290D2C4F0E30009EC78A /* XCRemoteSwiftPackageReference "TextFieldStepper" */,
+				D6FD29102C50BC7E009EC78A /* XCRemoteSwiftPackageReference "ButtonKit" */,
+			);
 			productRefGroup = D659BFD92C4A2545009D586D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +154,7 @@
 			files = (
 				D659BFDE2C4A2545009D586D /* ContentView.swift in Sources */,
 				D659BFDC2C4A2545009D586D /* mdaqashApp.swift in Sources */,
+				D6161E332C4CEAA600048DF2 /* play.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6FD290D2C4F0E30009EC78A /* XCRemoteSwiftPackageReference "TextFieldStepper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joe-scotto/TextFieldStepper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+		D6FD29102C50BC7E009EC78A /* XCRemoteSwiftPackageReference "ButtonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dean151/ButtonKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6FD290E2C4F0E30009EC78A /* TextFieldStepper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6FD290D2C4F0E30009EC78A /* XCRemoteSwiftPackageReference "TextFieldStepper" */;
+			productName = TextFieldStepper;
+		};
+		D6FD29112C50BC7E009EC78A /* ButtonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6FD29102C50BC7E009EC78A /* XCRemoteSwiftPackageReference "ButtonKit" */;
+			productName = ButtonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D659BFD02C4A2545009D586D /* Project object */;
 }

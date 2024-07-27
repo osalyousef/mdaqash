@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "buttonkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Dean151/ButtonKit",
+      "state" : {
+        "revision" : "4e00bf6f65182769b1288785ea70fb6528229b83",
+        "version" : "0.3.4"
+      }
+    },
+    {
+      "identity" : "textfieldstepper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joe-scotto/TextFieldStepper",
+      "state" : {
+        "revision" : "a4d3fb0eea2f7b6af6deec771375eb6ace22ce5b",
+        "version" : "3.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}
